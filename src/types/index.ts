@@ -5,7 +5,7 @@ export interface User {
   name: string;
   email: string;
   phone: string;
-  password: string;
+  password?: string;
   role: UserRole;
   branch_id?: string;
   branch_name?: string;
@@ -60,6 +60,8 @@ export interface Member {
   wallet_balance?: number;
   last_amount_change_date?: string;
   tracking: DayTracking[];
+  created_at?: string;
+  updated_at?: string;
 }
 
 export interface DayTracking {
